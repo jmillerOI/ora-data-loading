@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'ora-data-loading',
     environment,
     rootURL: '/ora-data-loading',
-    locationType: 'auto',
+    locationType: 'hash',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
