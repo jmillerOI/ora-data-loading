@@ -4,7 +4,7 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'ora-data-loading',
     environment,
-    rootURL: 'https://jmilleroi.github.io/ora-data-loading/',
+    rootURL: '/ora-data-loading',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
