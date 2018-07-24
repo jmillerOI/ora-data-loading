@@ -1233,7 +1233,7 @@
        Note: these only affect routes defined *after* them!
     */
 
-    this.urlPrefix = 'https://jmilleroi.github.io/ora-data-loading'; // make this `http://localhost:8080`, for example, if your API is on a different server
+    this.urlPrefix = 'https://jmilleroi.github.io'; // make this `http://localhost:8080`, for example, if your API is on a different server
     // this.namespace = '';    // make this `/api`, for example, if your API is namespaced
     this.timing = 3000; // delay for each request, automatically set to 0 during testing
 
@@ -1513,7 +1513,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("ora-data-loading/app")["default"].create({"name":"ora-data-loading","version":"0.0.0+b41639df"});
+            require("ora-data-loading/app")["default"].create({"name":"ora-data-loading","version":"0.0.0+ce0c09c3"});
           }
         
 //# sourceMappingURL=ora-data-loading.map
