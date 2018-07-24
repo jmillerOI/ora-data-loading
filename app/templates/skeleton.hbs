@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      {{#photo-concurrency-component as |loader|}}
+        {{#if loader.isRunning}}
+          <div class="card skeleton photo-card">
+            <div class="card-header">
+              <img src="{{photo.user.photoSrc}}" alt="" class="user-avatar  float-left">
+              <div class="float-left name">{{photo.user.name}}</div>
+              <div class="float-right date">
+                {{photo.createdAt}}
+              </div>
+            </div>
+            <div class="card-body">
+              <img src="{{photo.url}}" class="photo mb-3" alt="">
+              <div>
+                <h6>{{photo.title}}</h6>
+                <p>
+                  {{photo.description}}
+                </p>
+              </div>
+            </div>
+          </div>
+        {{else}}
+          {{#each loader.data as |photo|}}
+            {{photo-locked-component photo=photo}}
+          {{/each}}
+        {{/if}}
+      {{/photo-concurrency-component}}
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+</div>
