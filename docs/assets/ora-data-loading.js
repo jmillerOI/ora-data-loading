@@ -1513,7 +1513,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("ora-data-loading/app")["default"].create({"name":"ora-data-loading","version":"0.0.0+ce0c09c3"});
+            require("ora-data-loading/app")["default"].create({"name":"ora-data-loading","version":"0.0.0+59e97e56"});
           }
         
 //# sourceMappingURL=ora-data-loading.map
